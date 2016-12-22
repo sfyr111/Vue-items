@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data-binding</title>
+	<script src="http://cdn.bootcss.com/vue/2.1.6/vue.js"></script>
+</head>
+<body>
+	<div id="box">
+		<input type="text" v-model="msg">
+		{{msg}}
+	</div>
+	<script>
+		var vm = new Vue({
+			el: '#box',
+			data: {
+				msg: ''
+			}
+		})
+	</script>
+</body>
+</html>
